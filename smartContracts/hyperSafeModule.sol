@@ -160,18 +160,6 @@ contract hyperSafeModule
 
     function executeChainAbstractionOrder(address paramCrossChainTo, uint256 paramCrossChainValue, bytes memory paramCrossChainData) public
     {
-        /*
-        contract AbstractB {
-            function getX() returns(uint);
-        }
-
-        contract A {
-            function makeCall(address addressB) {
-                AbstractB(addressB).getX.value(1 ether).gas(0);
-            }
-        }
-        */
-
         GnosisSafe(myAaAddress).execTransactionFromModule(paramCrossChainTo, paramCrossChainValue, paramCrossChainData, GnosisSafe.Operation.Call);
         
         
@@ -274,8 +262,6 @@ contract hyperSafeModule
 
     function handle(uint32 _origin, bytes32 _sender, bytes calldata _body) external onlyMailbox 
     {
-        //require(gasleft() >= 7000000000, "not enoughGas");
-
         ccCallerAddres = bytes32ToAddress(_sender);
 
         address receivedCcTo;
@@ -330,21 +316,9 @@ contract hyperSafeModule
 
         executeChainAbstractionOrder(paramThisChainAddressHyperErc20, 0, hyperTransferCalldataData);
 
-        /*
-        hyperErc20(paramThisChainAddressHyperErc20).hyperTransfer
-        (
-            paramDestinationChainDomain, 
-            paramDestinationChainAddressHyperErc,
-            paramAddressToTransfer,
-            paramQunatityToTransferFromThisChain
-        );
-        */
+
 
         bytes memory paramCalldataData = abi.encodeWithSignature("transfer(address,uint256)", paramAddressToTransfer, paramQunatityToTransferFromOtherChain);
-
-        //.call(abi.encodeWithSignature("setNumber(uint256)", paramNumber));
-
-        //function transfer(address to, uint256 amount) public virtual override returns (bool)
 
         makeCcCall
         (
