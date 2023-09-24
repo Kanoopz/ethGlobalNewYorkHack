@@ -3,6 +3,8 @@
 
 ****IMPORTANT TO NOTE THAT THIS PROJECT AND ITS IMPLEMENTATION WAS BUILD FROM SCRATCH, IT DIDNT USE ANYTHING FROM THE PAST ETH GLOBAL SUPERHACK "/chainAbstraction" PROJECT REPO.
 
+productionFrontEnd:           https://65101d926686c853249ab8f9--comfy-kringle-88274e.netlify.app/
+
 chainAbstractionUnification project aims to; 
     
     
