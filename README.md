@@ -5,6 +5,24 @@
 
 productionFrontEnd:           https://65101d926686c853249ab8f9--comfy-kringle-88274e.netlify.app/
 
+
+Deployed addresses on testnets:
+    Goerli
+    	0xB313398aDF4b4a350D1fD7863A6Fb5204631Cc29
+    Mumbai
+    	0x0479Cc6a6e655E8586AC8168023A8Bc2e36c308b
+    Mantle
+    	0xd9146d5b427194c35ddea2a00ec42c9270e13afb
+    Arbitrum
+    	0x93A8fE00B91829763A797E933686318e89401c46
+    Celo
+    	0xd727997CFA1be9434084B71cDA1D17DC1e10FB63
+    Linea
+    	0x2CB2dd20822828cA7D058Ab71D9F85Af5cB71938
+    Base
+    	0x5337De352A86c9FbA04af650f1B48e8B1Eb38E96
+
+
 chainAbstractionUnification project aims to; 
     
     
@@ -27,6 +45,9 @@ There are 2 useCases implemented:
 
 Specific useCase:
 - Permitting users from others chains different from polygon to intercat with the lensProtocol.
+
+
+
 
 
 ![Apunte sin nombre - 24 sept 2023 5 02 a  m  - Página 1](https://github.com/Kanoopz/ethGlobalNewYorkHack/assets/43384993/5e2bf4d8-66e8-4ead-8617-06aab9647867)
