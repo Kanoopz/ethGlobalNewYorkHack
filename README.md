@@ -22,4 +22,10 @@ The two built modules are: axelarSafeModule and hyperSafeModule, implementing ax
 There are 2 useCases implemented:
 - General lowLevelCalls to give "orders" to other linkedAbstractedAccounts on differentChains than the one that emits the order.
 - hybridTransfer of erc20Tokens by "bridging" a portion of tokens from the source AA and the rest from the otherChainAa through an order.
+
+Specific useCase:
+- Permitting users from others chains different from polygon to intercat with the lensProtocol.
+
+
+
   
