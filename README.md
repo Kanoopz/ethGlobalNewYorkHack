@@ -15,5 +15,11 @@ chainAbstractionUnification project aims to;
     3: Enable the payment of gas accross all evmChains by using a single evmChainNativeAsset for operations/orders/transactions all over the evmCompatibleChains ecosystem.
         Example: pay the gas of transactions on base, optimism, ethereumMainnet, linea, arbitrum, etc with matic, so the user only has the need to hold that nativeAsset(matic).
 
-
 "Arquitecture"
+The project is built using safeAbstractedAccount approach using modules to have customized lowLevelCalls operations.
+The two built modules are: axelarSafeModule and hyperSafeModule, implementing axelar crossChainInfraestructure and hyperLane crossChainInfraestructure respectively.
+
+There are 2 useCases implemented:
+- General lowLevelCalls to give "orders" to other linkedAbstractedAccounts on differentChains than the one that emits the order.
+- hybridTransfer of erc20Tokens by "bridging" a portion of tokens from the source AA and the rest from the otherChainAa through an order.
+  
