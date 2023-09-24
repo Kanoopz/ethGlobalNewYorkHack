@@ -1,0 +1,20 @@
+chainOne
+    #registerCc
+chainTwo
+    - map(string -> bool) inUse
+    - map(string -> string) resolver
+    - map(address -> string[]) pendingToAccept
+    #cceptCcRegistration
+
+
+general
+    - map(string -> bool) inUse
+    - map(string -> address) resolver
+    - map(address -> string[]) pendingToAccept
+    #registerCc
+    #acceptCcRegistration
+    #forwardCallExecution
+
+resolver
+    address owner
+    
