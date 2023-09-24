@@ -274,24 +274,6 @@ contract hyperSafeModule
         emit receivedCcMessage(receivedCcTo, receivedCcValue, receivedCcData);
         
         executeChainAbstractionOrder(receivedCcTo, receivedCcValue, receivedCcData);
-
-
-        /*
-            ccCallerAddres = bytes32ToAddress(_sender);
-
-            address paramNumberScAddress;
-            uint paramArbitraryNumber;
-
-            (paramNumberScAddress, paramArbitraryNumber) = abi.decode(_body, (address, uint));
-
-            (bool success, ) = paramNumberScAddress.call(abi.encodeWithSignature("setNumber(uint256)", paramArbitraryNumber));
-
-        /*
-            originChainSender = paramOriginChainSender;
-            arbitraryNumber = paramArbitraryNumber;
-
-            originChain = _origin;
-        */
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////
