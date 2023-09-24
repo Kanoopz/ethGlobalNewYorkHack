@@ -29,5 +29,8 @@ Specific useCase:
 - Permitting users from others chains different from polygon to intercat with the lensProtocol.
 
 
+![Apunte sin nombre - 24 sept 2023 5 02 a  m  - Página 1](https://github.com/Kanoopz/ethGlobalNewYorkHack/assets/43384993/5e2bf4d8-66e8-4ead-8617-06aab9647867)
+
+
 
   
