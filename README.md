@@ -48,7 +48,14 @@ Specific useCase:
 
 
 
+generalLowLevel crossChain orderCalls:
 
+![Apunte sin nombre - 24 sept 2023 5 12 a  m](https://github.com/Kanoopz/ethGlobalNewYorkHack/assets/43384993/67931e20-8469-4241-80ff-e4ff232d1764)
+
+
+
+
+hybridTransfer of erc20Tokens by "bridging" a portion of tokens from the source AA and the rest from the otherChainAa through an order.
 
 ![Apunte sin nombre - 24 sept 2023 5 02 a  m  - Página 1](https://github.com/Kanoopz/ethGlobalNewYorkHack/assets/43384993/5e2bf4d8-66e8-4ead-8617-06aab9647867)
 
