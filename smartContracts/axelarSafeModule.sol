@@ -37,7 +37,6 @@ contract axelarSafeModule is AxelarExecutable
 
 
 
-     // Call this function to update the value of this contract along with all its siblings'.
     function makeCcAaOrder(string calldata destinationChain, string calldata destinationAddress, address to, bytes memory payload) external payable 
     {
         require(msg.value > 0, 'Gas payment is required');
@@ -48,7 +47,6 @@ contract axelarSafeModule is AxelarExecutable
         gateway.callContract(destinationChain, destinationAddress, data);
     }
 
-    // Handles calls created by setAndSend. Updates this contract's value
     function _execute(string calldata sourceChain_, string calldata sourceAddress_, bytes calldata payload_) internal override 
     {
         address to;
